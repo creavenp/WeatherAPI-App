@@ -3,7 +3,7 @@ import './App.css';
 
 // Initializing the requests
 const apiData = {
-  'key': '07e57b8f5ed03aaa686a14bad5eb3b6e',
+  'key': '', // utilize own API key for time being, need to properly protect API key while allowing usage of app and functionality
   'url': 'http://api.openweathermap.org/data/2.5/weather?'
 }
 
