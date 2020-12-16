@@ -1,38 +1,99 @@
-.App {
-  text-align: center;
+body {
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(to right top, #020202, #0f0f16, #161723,
+                                   #1b1f30, #1f273f, #22263e, #25263e, #28253d,
+                                   #261c2c, #1f141d, #150c10, #000000);
+  height: 100vh;
+  font-family: 'Bitter', serif;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  position: relative;
+  width: 550px;
+  height: 400px;
+  margin: 240px auto;
+  background-image: url('images/cloudy.png');
+  background-size: 400px 500px;
+  border: 3px solid #5FFBFF;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.search-bar {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.search-txt {
+  border-radius: 10px 0 0 10px;
+  display: inline-block;
+  color: #1E1B18;
+  font-size: 15px;
+  font-family: 'Bitter', serif;
+  padding: 0 10px;
+  height: 25px;
+  outline: none;
+  border:none;
+}
+.search-btn {
+  border-radius: 0 10px 10px 0;
+  background-color: #1E1B18;
+  display: inline-block;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  height: 26px;
+  color: white;
+  font-family: 'Bitter', serif;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+.weatherAspects {
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  list-style: none;
+  line-height: 200%;
+  font-size: 17px;
+}
+#temp {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 55px;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+#location {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+  color: white;
+  
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#month {
+  position: absolute;
+  top: 47%;
+  left: 15%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 35px;
+}
+#date {
+  position: absolute;
+  top: 52%;
+  left: 15%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 25px;
+}
+#description {
+  position: absolute;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 20px;
 }
